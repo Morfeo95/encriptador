@@ -14,5 +14,30 @@ main{
 }
 
 .seccion__principal{
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 7.5rem;
+    padding: 7% 5%;
+
+}
+.seccion__principal__captura{
+    width: 48.5rem;
+    height: 30rem;
+    display: flex;
+    padding: 10%;
+}
+
+.seccion__principal__captura__capturador{
+
+}
+
+.advertencia{
+    display: flex;
+}
+
+.exclamacion{
+    width: 1rem;
 }
