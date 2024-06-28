@@ -1,0 +1,18 @@
+*{
+margin: 0;
+padding: 0;
+}
+:root{
+    --color-principal: #E5E5E5
+}
+
+body{
+    background-color: var(--color-principal);
+}
+main{
+    display: flex;
+}
+
+.seccion__principal{
+    
+}
