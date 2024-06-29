@@ -5,6 +5,7 @@ padding: 0;
 }
 :root{
     --color-principal: #E5E5E5;
+    --color-secundario: #0A3871;
 
     --inter-font: "Inter", sans-serif;
 }
@@ -28,7 +29,7 @@ main{
 }
 .seccion__principal__captura{
     width: 45.5rem;
-    height: 35rem;
+    padding: 0 10% ;
 
 }
 
@@ -38,17 +39,31 @@ main{
     font-family: var(--inter-font);
     font-weight: 400;
     font-size: 2rem;
-    color: #0A3871;
+    color: var(--color-secundario);
     text-align: center;
     width: 45.5rem;
-    height: 35rem;
+    height: 20rem;
 
 }
 
 .advertencia{
     display: flex;
+    justify-content: center;
 }
 
 .exclamacion{
     width: 1rem;
+}
+.contenedor__botones{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.botones__inferiores{
+    text-decoration: none;
+    width: 13rem;
+    background-color: var(--color-secundario);
+    border: none;
+    height: 4rem;
 }
