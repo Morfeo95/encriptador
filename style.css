@@ -6,6 +6,7 @@ padding: 0;
 :root{
     --color-principal: #E5E5E5;
     --color-secundario: #0A3871;
+    --color-terciario: #D8DFE8;
 
     --inter-font: "Inter", sans-serif;
 }
@@ -13,6 +14,8 @@ padding: 0;
 body{
     background-color: var(--color-principal);
 }
+
+
 main{
     display: flex;
 }
@@ -20,16 +23,17 @@ main{
 .seccion__principal{
     display: flex;
     flex-direction: column;
+    padding: 0 10% ;
+
 }
 
 .logo{
     width: 7.5rem;
-    padding: 7% 5%;
+    padding: 3% 7%;
 
 }
 .seccion__principal__captura{
     width: 45.5rem;
-    padding: 0 10% ;
 
 }
 
@@ -48,7 +52,8 @@ main{
 
 .advertencia{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding: 0 5%;
 }
 
 .exclamacion{
@@ -60,10 +65,39 @@ main{
     gap: 3%;
 }
 
-.botones__inferiores{
-    text-decoration: none;
-    width: 13rem;
+.boton__inferior__izquierdo{
+    font-family: var(--inter-font);
+    font-weight: 400;
+    color: white;
+    width: 20.5rem;
     background-color: var(--color-secundario);
     border: none;
     height: 4rem;
+    border-radius: 1.5rem;
+    
+}
+.boton__inferior__derecho{
+    font-family: var(--inter-font);
+    font-weight: 400;
+    color: var(--color-secundario);
+    width: 20.5rem;
+    background-color:var(--color-terciario);
+    height: 4rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--color-secundario);
+}
+
+aside{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    border-radius: 1.5rem;
+}
+
+aside p{
+    text-align: center;
+    font-family: var(--inter-font);
+    font-weight: 400;
+    font-size: 1rem;
 }
