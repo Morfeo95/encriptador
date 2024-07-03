@@ -3,6 +3,10 @@
 margin: 0;
 padding: 0;
 }
+html body{
+    height: 100%;
+
+}
 :root{
     --color-principal: #E5E5E5;
     --color-secundario: #0A3871;
@@ -14,6 +18,7 @@ padding: 0;
 body{
     background-color: var(--color-principal);
     width: 100%;
+    
 }
 
 
@@ -97,7 +102,7 @@ aside{
     padding: 10% 0;
     border-radius: 1.5rem;
     align-items: center;
-}
+    box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);}
 
 aside p{
     text-align: center;
@@ -112,10 +117,10 @@ aside textarea{
     font-family: var(--inter-font);
     font-weight: 400;
     font-size: 2rem;
-    color: var(--color-secundario);
+    color: #495057;
     text-align: start;
     gap: 10%;
-    height: 40rem;
+    height: 27rem;
 }
 aside button{
     gap: 10%;
@@ -137,7 +142,7 @@ footer{
     display: flex;
     background-color: var(--color-secundario);
     gap: 10%;
-    margin: 0.5rem 0 0;
+    margin: 1rem 0 0;
     justify-content: center;
 }
 
@@ -157,4 +162,34 @@ footer figure{
     font-family: var(--inter-font);
     color: var(--color-terciario);
     font-weight: 400;
+    text-decoration: none;
+    display: flex;
+}
+
+@media (max-width: 1350px ){
+    main{
+        flex-direction: column;
+    }
+    .mono{
+        display: none;
+    }
+    aside{
+        margin: 1rem 1rem 0;
+    }
+    aside textarea{
+        height: auto;
+    }
+    @media (max-width: 790px){
+        .contenedor__botones{
+            flex-direction: column;
+        }
+        .seccion__principal__captura__capturador{
+            width: auto;
+            font-size: 1rem;
+            height: 25rem;
+        }
+        footer{
+
+        }
+    }
 }
