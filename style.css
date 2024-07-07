@@ -3,9 +3,8 @@
 margin: 0;
 padding: 0;
 }
-html body{
-    height: 100%;
-
+html, body{
+    box-sizing: border-box;
 }
 :root{
     --color-principal: #E5E5E5;
@@ -16,14 +15,14 @@ html body{
 }
 
 body{
-    background-color: var(--color-principal);
-    width: 100%;
-    
+    background-color: var(--color-principal);    
 }
 
 
 main{
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .seccion__principal{
@@ -99,10 +98,18 @@ aside{
     gap: 10%;
     display: flex;
     flex-direction: column;
+    overflow: scroll;
     padding: 10% 0;
     border-radius: 1.5rem;
     align-items: center;
-    box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);}
+    box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+aside::-webkit-scrollbar {
+    display: none; 
+}
 
 aside p{
     text-align: center;
@@ -111,16 +118,15 @@ aside p{
     font-size: 1rem;
 }
 
-aside textarea{
-    border: none;
-    background: none;
+#mensajeEncriptado{
     font-family: var(--inter-font);
     font-weight: 400;
     font-size: 2rem;
     color: #495057;
     text-align: start;
     gap: 10%;
-    height: 27rem;
+    height: 40.5rem;
+    width: 25rem;
 }
 aside button{
     gap: 10%;
@@ -175,21 +181,48 @@ footer figure{
     }
     aside{
         margin: 1rem 1rem 0;
+        height: auto;
     }
     aside textarea{
         height: auto;
     }
     @media (max-width: 790px){
+        
+        main{
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside{
+            width: 20.5rem;
+        }
+
         .contenedor__botones{
             flex-direction: column;
         }
+        .boton__inferior__derecho{
+            margin:0.5rem 0;
+        }
+        .boton__inferior__izquierdo{
+            margin:0.5rem 0;
+        }
+        .seccion__principal__captura{
+            width: auto;
+        }
+
         .seccion__principal__captura__capturador{
             width: auto;
             font-size: 1rem;
             height: 25rem;
         }
         footer{
-
+            gap: 2%;
         }
+
+        .icono{
+            width: 1rem;
+            height: 1rem;
+        }
+        
     }
 }

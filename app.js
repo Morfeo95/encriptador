@@ -10,7 +10,7 @@ function encriptar(){
     while(salida.firstChild){
         salida.removeChild(salida.firstChild);
     }
-    const textoDeSalida = document.createElement("textarea");
+    const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
     textoDeSalida.id = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
@@ -23,7 +23,7 @@ function encriptar(){
 }
 
 function copiar(){
-    const contenidoAside = document.getElementById("mensajeEncriptado").value;
+    const contenidoAside = document.getElementById("mensajeEncriptado").innerText;
     navigator.clipboard.writeText(contenidoAside);
 }
 
@@ -39,7 +39,7 @@ function desencriptar(){
     while(salida.firstChild){
         salida.removeChild(salida.firstChild);
     }
-    const textoDeSalida = document.createElement("textarea");
+    const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
     textoDeSalida.id = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
