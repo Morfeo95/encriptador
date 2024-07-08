@@ -50,3 +50,81 @@ function desencriptar(){
     document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
 
 }
+
+function cesar() {
+    const texto = document.getElementById("entradaDeTexto").value;
+    const abc = []
+    const listaTexto = []
+    for (let i of texto){
+        listaTexto.push (i);
+    }
+    for (let i=0 ; i<26; i++){
+        abc.push(String.fromCharCode(97+i));
+    }
+
+    for (let i = 0 ; i < listaTexto.length; i++){
+        for (let j = 0 ; j < abc.length; j++ ){
+            let k = (j+5) % abc.length;
+            if (listaTexto[i] === abc[j]) {
+                listaTexto[i] = abc[k];
+                break;
+            }
+        }
+    }
+    const textoEncriptado = listaTexto.join('');
+    
+    const salida = document.getElementById("salidaDeTexto");
+    while(salida.firstChild){
+        salida.removeChild(salida.firstChild);
+    }
+    const textoDeSalida = document.createElement("p");
+    textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.id = "mensajeEncriptado";
+    salida.appendChild(textoDeSalida);
+    const boton = document.createElement("button");
+    boton.innerText="copiar";
+    boton.onclick=copiar();
+    salida.appendChild(boton);
+    document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
+
+    console.log(textoEncriptado);
+}
+
+function descesar() {
+    const texto = document.getElementById("entradaDeTexto").value;
+    const abc = []
+    const listaTexto = []
+    for (let i of texto){
+        listaTexto.push (i);
+    }
+    for (let i=0 ; i<26; i++){
+        abc.push(String.fromCharCode(97+i));
+    }
+
+    for (let i = 0 ; i < listaTexto.length; i++){
+        for (let j = 0 ; j < abc.length; j++ ){
+            let k = (j-5+abc.length) % abc.length;
+            if (listaTexto[i] === abc[j]) {
+                listaTexto[i] = abc[k];
+                break;
+            }
+        }
+    }
+    const textoEncriptado = listaTexto.join('');
+    
+    const salida = document.getElementById("salidaDeTexto");
+    while(salida.firstChild){
+        salida.removeChild(salida.firstChild);
+    }
+    const textoDeSalida = document.createElement("p");
+    textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.id = "mensajeEncriptado";
+    salida.appendChild(textoDeSalida);
+    const boton = document.createElement("button");
+    boton.innerText="copiar";
+    boton.onclick=copiar();
+    salida.appendChild(boton);
+    document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
+
+    console.log(textoEncriptado);
+}

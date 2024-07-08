@@ -114,7 +114,7 @@ aside::-webkit-scrollbar {
 aside p{
     text-align: center;
     font-family: var(--inter-font);
-    font-weight: 400;
+    font-weight: auto;
     font-size: 1rem;
 }
 
@@ -125,8 +125,7 @@ aside p{
     color: #495057;
     text-align: start;
     gap: 10%;
-    height: 40.5rem;
-    width: 25rem;
+
 }
 aside button{
     gap: 10%;
@@ -217,6 +216,7 @@ footer figure{
         }
         footer{
             gap: 2%;
+            width: auto;
         }
 
         .icono{
