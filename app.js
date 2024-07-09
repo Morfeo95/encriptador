@@ -53,7 +53,9 @@ function desencriptar(){
 
 function cesar() {
     const texto = document.getElementById("entradaDeTexto").value;
+    const llave = parseInt(document.getElementById("llave").value);
     const abc = []
+    console.log(llave)
     const listaTexto = []
     for (let i of texto){
         listaTexto.push (i);
@@ -64,7 +66,7 @@ function cesar() {
 
     for (let i = 0 ; i < listaTexto.length; i++){
         for (let j = 0 ; j < abc.length; j++ ){
-            let k = (j+5) % abc.length;
+            let k = (j+llave) % abc.length;
             if (listaTexto[i] === abc[j]) {
                 listaTexto[i] = abc[k];
                 break;
@@ -87,11 +89,12 @@ function cesar() {
     salida.appendChild(boton);
     document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
 
-    console.log(textoEncriptado);
 }
 
 function descesar() {
     const texto = document.getElementById("entradaDeTexto").value;
+    const llave = parseInt(document.getElementById("llave").value);
+    console.log(llave)
     const abc = []
     const listaTexto = []
     for (let i of texto){
@@ -103,7 +106,7 @@ function descesar() {
 
     for (let i = 0 ; i < listaTexto.length; i++){
         for (let j = 0 ; j < abc.length; j++ ){
-            let k = (j-5+abc.length) % abc.length;
+            let k = (j-llave+abc.length) % abc.length;
             if (listaTexto[i] === abc[j]) {
                 listaTexto[i] = abc[k];
                 break;
@@ -126,5 +129,4 @@ function descesar() {
     salida.appendChild(boton);
     document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
 
-    console.log(textoEncriptado);
 }

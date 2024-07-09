@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-cesar.css">
     <title>Encripador</title>
 </head>
 <body>
     <main>
         <section class="seccion__principal">
-            <img src="./img/Logo.png" alt="" class="logo">
+            <p class="logo"><strong>Modo Cesar</strong></p>
         <div class="seccion__principal__captura">
             <textarea name="" id="entradaDeTexto" class="seccion__principal__captura__capturador"> Ingrese el texto aqui</textarea>
+        </div>
+        <div class="seccion__principal__llave">
+            <strong class="texto__llave">Ingresa el valor de la llave de encripcion (solo numeros del 1 al 25):</strong><input id="llave" min="1" max="25" type="number" value="7">
         </div>
         <figure class="advertencia">
             <img src="./img/bi_exclamation-circle-fill.png" alt="" class="exclamacion">
@@ -22,9 +25,10 @@
         </div>
         </section>
         <aside id="salidaDeTexto">
-            <img src="./img/Muñeco.png" alt="" class="mono">
+            <img src="./img/cesar.png" alt="" class="mono">
           <p><strong>Ningun Mensaje fue encontrado</strong></p>
            <p>Ingresa el texto de deseas encriptar o desencriptar.</p>
+           <div class="cesar"><a href="index.html">Modo Normal</a></div>
       </aside>
     </main>
     <footer>
