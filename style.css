@@ -192,6 +192,7 @@ footer{
 
 footer figure{
     display: flex;
+    align-items: center;
 }
 .icono{
     filter: invert(1);
@@ -208,6 +209,32 @@ footer figure{
     font-weight: 400;
     text-decoration: none;
     display: flex;
+    align-items: center;
+}
+
+.acerca__de{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 2rem 0 0;
+}
+
+.acerca__de__texto{
+    font-family: var(--inter-font);
+    color: var(--color-secundario);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.acerca__de__ejemplos{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 45rem;
+}
+
+.imagenes__about{
+    border: 1px solid black;
+    scale: 70%;
 }
 
 @media (max-width: 1350px ){
