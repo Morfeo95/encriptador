@@ -25,7 +25,7 @@ Para utilizar este sistema de encriptación, sigue los pasos a continuación:
 
 ## Seguridad
 
-Nuestro sistema utiliza encriptación avanzada para asegurar que tus datos se mantengan seguros. Puede encriptar y desencriptar cualquier texto.
+Nuestro sistema utiliza encriptación sencilla. Puede encriptar y desencriptar cualquier texto.
 
 ## Requisitos
 
