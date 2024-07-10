@@ -116,13 +116,14 @@ aside{
     gap: 10%;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     padding: 10% 0;
     border-radius: 1.5rem;
     align-items: center;
     box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     scrollbar-width: none;
+    box-sizing: border-box;
+    width: auto;    
 }
 
 aside::-webkit-scrollbar {
@@ -134,6 +135,7 @@ aside p{
     font-family: var(--inter-font);
     font-weight: auto;
     font-size: 1rem;
+
 }
 
 .cesar{
@@ -157,13 +159,16 @@ aside p{
     color: var(--color-secundario);
 }
 
-#mensajeEncriptado{
+.mensajeEncriptado{
+    padding: 5%;
     font-family: var(--inter-font);
     font-weight: 400;
     font-size: 2rem;
     color: #495057;
     text-align: start;
     gap: 10%;
+    word-wrap: break-word;
+    width: auto;
 
 }
 aside button{
@@ -237,7 +242,7 @@ footer figure{
     scale: 70%;
 }
 
-@media (max-width: 1350px ){
+@media (max-width: 1600px ){
     main{
         flex-direction: column;
     }
@@ -246,6 +251,7 @@ footer figure{
     }
     aside{
         margin: 1rem 1rem 0;
+
         height: auto;
     }
     aside textarea{
@@ -273,6 +279,10 @@ footer figure{
         }
         .seccion__principal__captura{
             width: auto;
+        }
+
+        .mensajeEncriptado{
+            font-size: 1rem;
         }
 
         .seccion__principal__captura__capturador{

@@ -12,13 +12,13 @@ function encriptar(){
     }
     const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
-    textoDeSalida.id = "mensajeEncriptado";
+    textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");
     boton.innerText="copiar";
-    boton.onclick=copiar();
+    boton.onclick=copiar;
     salida.appendChild(boton);
-    document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
+    document.getElementById("entradaDeTexto").value = "";
 
 }
 
@@ -41,13 +41,13 @@ function desencriptar(){
     }
     const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
-    textoDeSalida.id = "mensajeEncriptado";
+    textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");
     boton.innerText="copiar";
-    boton.onclick=copiar();
+    boton.onclick=copiar;
     salida.appendChild(boton);
-    document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
+    document.getElementById("entradaDeTexto").value = "";
 
 }
 
@@ -81,13 +81,13 @@ function cesar() {
     }
     const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
-    textoDeSalida.id = "mensajeEncriptado";
+    textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");
     boton.innerText="copiar";
-    boton.onclick=copiar();
+    boton.onclick=copiar;
     salida.appendChild(boton);
-    document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
+    document.getElementById("entradaDeTexto").value = "";
 
 }
 
@@ -121,12 +121,12 @@ function descesar() {
     }
     const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
-    textoDeSalida.id = "mensajeEncriptado";
+    textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");
     boton.innerText="copiar";
-    boton.onclick=copiar();
+    boton.onclick=copiar;
     salida.appendChild(boton);
-    document.getElementById("entradaDeTexto").value = "Ingrese el texto aqui";
+    document.getElementById("entradaDeTexto").value = "";
 
 }

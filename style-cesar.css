@@ -193,7 +193,7 @@ aside p{
 }
 
 
-#mensajeEncriptado{
+.mensajeEncriptado{
     font-family: var(--inter-font);
     font-weight: 400;
     font-size: 2rem;
@@ -283,6 +283,10 @@ footer figure{
 
         aside{
             width: 20.5rem;
+        }
+        
+        .mensajeEncriptado{
+            font-size: 1rem;
         }
 
         .contenedor__botones{
