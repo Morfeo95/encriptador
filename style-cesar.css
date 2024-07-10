@@ -264,6 +264,9 @@ footer figure{
     aside textarea{
         height: auto;
     }
+    .acerca__de{
+        display: flex;
+    }
     @media (max-width: 790px){
         
         main{
