@@ -12,6 +12,7 @@ function encriptar(){
     }
     const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.id = "mensajeEncriptado"
     textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");
@@ -41,6 +42,8 @@ function desencriptar(){
     }
     const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.id = "mensajeEncriptado"
     textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");
@@ -81,6 +84,8 @@ function cesar() {
     }
     const textoDeSalida = document.createElement("p");
     textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.id = "mensajeEncriptado"
     textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");
@@ -94,7 +99,6 @@ function cesar() {
 function descesar() {
     const texto = document.getElementById("entradaDeTexto").value;
     const llave = parseInt(document.getElementById("llave").value);
-    console.log(llave)
     const abc = []
     const listaTexto = []
     for (let i of texto){
@@ -113,14 +117,15 @@ function descesar() {
             }
         }
     }
-    const textoEncriptado = listaTexto.join('');
+    const textoDesencriptado = listaTexto.join('');
     
     const salida = document.getElementById("salidaDeTexto");
     while(salida.firstChild){
         salida.removeChild(salida.firstChild);
     }
     const textoDeSalida = document.createElement("p");
-    textoDeSalida.innerText = textoEncriptado;
+    textoDeSalida.innerText = textoDesencriptado;
+    textoDeSalida.id = "mensajeEncriptado"
     textoDeSalida.className = "mensajeEncriptado";
     salida.appendChild(textoDeSalida);
     const boton = document.createElement("button");

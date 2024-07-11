@@ -52,6 +52,12 @@ main{
     font-weight: 400;
     font-size: 3rem;
 }
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
 .seccion__principal__captura{
     width: 45.5rem;
     margin: 3rem 0 0;
