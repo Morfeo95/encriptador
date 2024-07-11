@@ -246,6 +246,10 @@ footer figure{
     main{
         flex-direction: column;
     }
+    .seccion__principal{
+        justify-content: center;       
+     }
+
     .mono{
         display: none;
     }
@@ -263,6 +267,8 @@ footer figure{
             justify-content: center;
             align-items: center;
         }
+
+        
     
         aside{
             width: 20.5rem;
@@ -305,6 +311,10 @@ footer figure{
         }
         .acerca__de__ejemplos{
             width: 20rem;
+        }
+
+        .footer__texto{
+            font-size: 0.5rem;
         }
         
         
