@@ -286,9 +286,10 @@ footer figure{
         }
 
         .seccion__principal__captura__capturador{
-            width: auto;
+            width: 20rem;
             font-size: 1rem;
             height: 25rem;
+            justify-content: center;
         }
         footer{
             gap: 2%;

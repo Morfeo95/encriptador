@@ -1,5 +1,9 @@
 function encriptar(){
     const texto = document.getElementById("entradaDeTexto").value;
+    if (/[A-Z]/.test(texto) || /[.,\/#!$%\^&\*;:{}=\-_`~()]/.test(texto)) {
+        alert("El texto no debe contener mayúsculas ni signos de puntuación.");
+        return; 
+    }
     const textoEncriptado = texto
         .replace( /e/g, "enter")
         .replace(/i/g, "imes")
@@ -30,6 +34,10 @@ function copiar(){
 
 function desencriptar(){
     const texto = document.getElementById("entradaDeTexto").value;
+    if (/[A-Z]/.test(texto) || /[.,\/#!$%\^&\*;:{}=\-_`~()]/.test(texto)) {
+        alert("El texto no debe contener mayúsculas ni signos de puntuación.");
+        return; 
+    }
     const textoEncriptado = texto
         .replace( /enter/g, "e")
         .replace(/imes/g, "i")
@@ -56,6 +64,10 @@ function desencriptar(){
 
 function cesar() {
     const texto = document.getElementById("entradaDeTexto").value;
+    if (/[A-Z]/.test(texto) || /[.,\/#!$%\^&\*;:{}=\-_`~()]/.test(texto)) {
+        alert("El texto no debe contener mayúsculas ni signos de puntuación.");
+        return; 
+    }
     const llave = parseInt(document.getElementById("llave").value);
     const abc = []
     console.log(llave)
@@ -98,6 +110,10 @@ function cesar() {
 
 function descesar() {
     const texto = document.getElementById("entradaDeTexto").value;
+    if (/[A-Z]/.test(texto) || /[.,\/#!$%\^&\*;:{}=\-_`~()]/.test(texto)) {
+        alert("El texto no debe contener mayúsculas ni signos de puntuación.");
+        return; 
+    }
     const llave = parseInt(document.getElementById("llave").value);
     const abc = []
     const listaTexto = []
