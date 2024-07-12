@@ -66,6 +66,7 @@ main{
     width: 45.5rem;
     height: 40rem;
     gap: 10%;
+    resize: none;
 
 }
 
@@ -248,6 +249,10 @@ footer figure{
     }
     .seccion__principal{
         justify-content: center;       
+     }
+
+     .seccion__principal__captura__capturador{
+        width: 35rem;
      }
 
     .mono{
