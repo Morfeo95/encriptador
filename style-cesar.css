@@ -29,7 +29,7 @@ input[type="number"]::-ms-clear, input[type="number"]::-ms-reveal {
 }
 
 body{
-    background-color: var(--color-principal);    
+    background-color: var(--color-principal);
 }
 
 
@@ -264,7 +264,8 @@ footer figure{
     }
 
     .seccion__principal{
-        justify-content: center;       
+        display: flex;
+        align-items: center;
      }
 
      .seccion__principal__captura__capturador{
