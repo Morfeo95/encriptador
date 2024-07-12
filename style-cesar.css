@@ -79,6 +79,7 @@ main{
     width: 45.5rem;
     height: 40rem;
     gap: 10%;
+    resize: none;
 
 }
 
@@ -256,13 +257,17 @@ footer figure{
 
 }
 
-@media (max-width: 1350px ){
+@media (max-width: 768px ){
     main{
         flex-direction: column;
     }
 
     .seccion__principal{
         justify-content: center;       
+     }
+
+     .seccion__principal__captura__capturador{
+        width: 35rem;
      }
 
     .contenedor__botones{
@@ -282,7 +287,7 @@ footer figure{
     .acerca__de{
         display: flex;
     }
-    @media (max-width: 790px){
+    @media (max-width: 640px){
         
         main{
             justify-content: center;
