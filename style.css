@@ -242,7 +242,7 @@ footer figure{
     scale: 70%;
 }
 
-@media (max-width: 1600px ){
+@media (max-width: 768px ){
     main{
         flex-direction: column;
     }
@@ -261,7 +261,7 @@ footer figure{
     aside textarea{
         height: auto;
     }
-    @media (max-width: 790px){
+    @media (max-width: 640px){
         
         main{
             justify-content: center;
