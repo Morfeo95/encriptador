@@ -289,6 +289,25 @@ footer figure{
     .acerca__de{
         display: flex;
     }
+
+    footer{
+        border-radius: 0.5rem;
+        flex-direction: column-reverse;
+    }
+
+    footer figure{
+        border-top: 1px solid var(--color-terciario);
+    }
+
+    .copyright{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .footer__texto{
+        font-size: 1.5rem;
+    }
+
     @media (max-width: 640px){
         
         main{
@@ -337,14 +356,16 @@ footer figure{
             width: auto;
         }
 
+        .copyright{
+            width: 1rem;
+            height: 1rem;
+        }
+
         .icono{
             width: 1rem;
             height: 1rem;
         }
 
-        .footer__texto{
-            font-size: 0.5rem ;
-        }
         
     }
 }

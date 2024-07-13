@@ -266,6 +266,25 @@ footer figure{
     aside textarea{
         height: auto;
     }
+
+    footer{
+        border-radius: 0.5rem;
+        flex-direction: column-reverse;
+    }
+
+    footer figure{
+        border-top: 1px solid black;
+    }
+
+    .copyright{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .footer__texto{
+        font-size: 1.5rem;
+    }
+
     @media (max-width: 640px){
         
         main{
@@ -302,12 +321,12 @@ footer figure{
             height: 25rem;
             justify-content: center;
         }
-        footer{
-            gap: 2%;
-            width: auto;
-        }
 
         .icono{
+            width: 1rem;
+            height: 1rem;
+        }
+        .copyright{
             width: 1rem;
             height: 1rem;
         }
@@ -316,10 +335,6 @@ footer figure{
         }
         .acerca__de__ejemplos{
             width: 20rem;
-        }
-
-        .footer__texto{
-            font-size: 0.5rem;
         }
         
         
